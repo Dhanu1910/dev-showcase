@@ -1,37 +1,34 @@
 import { useInView } from '@/hooks/useInView';
+import { Code2, Database, Terminal, FileCode, Braces, LayoutDashboard } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Programming Languages',
     skills: [
-      { name: 'HTML5', level: 95 },
-      { name: 'CSS3 / Tailwind', level: 90 },
-      { name: 'JavaScript', level: 88 },
-      { name: 'TypeScript', level: 80 },
-      { name: 'React', level: 85 },
+      { name: 'Python', level: 85 },
+      { name: 'C++', level: 80 },
+      { name: 'C', level: 78 },
+      { name: 'JavaScript', level: 75 },
     ],
   },
   {
-    title: 'Tools & Others',
+    title: 'Web Development',
     skills: [
-      { name: 'Git / GitHub', level: 85 },
-      { name: 'VS Code', level: 90 },
-      { name: 'Figma', level: 70 },
-      { name: 'npm / Vite', level: 80 },
-      { name: 'REST APIs', level: 75 },
+      { name: 'HTML5', level: 90 },
+      { name: 'CSS3', level: 88 },
+      { name: 'Tailwind CSS', level: 82 },
+      { name: 'React', level: 70 },
     ],
   },
 ];
 
-const techStack = [
-  { name: 'HTML5', color: 'from-orange-500 to-orange-600' },
-  { name: 'CSS3', color: 'from-blue-500 to-blue-600' },
-  { name: 'JavaScript', color: 'from-yellow-400 to-yellow-500' },
-  { name: 'TypeScript', color: 'from-blue-400 to-blue-500' },
-  { name: 'React', color: 'from-cyan-400 to-cyan-500' },
-  { name: 'Tailwind', color: 'from-teal-400 to-teal-500' },
-  { name: 'Git', color: 'from-orange-400 to-red-500' },
-  { name: 'Vite', color: 'from-purple-400 to-purple-500' },
+const techCards = [
+  { name: 'Python', icon: Terminal, description: 'Scripting & Automation' },
+  { name: 'C++', icon: Code2, description: 'Object-Oriented Programming' },
+  { name: 'C', icon: FileCode, description: 'Systems Programming' },
+  { name: 'DSA', icon: Braces, description: 'Data Structures & Algorithms' },
+  { name: 'HTML & CSS', icon: LayoutDashboard, description: 'Web Fundamentals' },
+  { name: 'Git', icon: Database, description: 'Version Control' },
 ];
 
 const SkillsSection = () => {
@@ -50,35 +47,37 @@ const SkillsSection = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
           </div>
 
-          {/* Tech Stack Pills */}
-          <div className={`flex flex-wrap justify-center gap-3 mb-16 ${isInView ? 'animate-fade-up animation-delay-200' : 'opacity-0'}`}>
-            {techStack.map((tech, index) => (
+          {/* Tech Cards Grid */}
+          <div className={`grid grid-cols-2 md:grid-cols-3 gap-4 mb-16 ${isInView ? 'animate-fade-up animation-delay-200' : 'opacity-0'}`}>
+            {techCards.map((tech, index) => (
               <div
                 key={tech.name}
-                className="px-5 py-2.5 glass-card rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-default"
-                style={{ animationDelay: `${index * 50}ms` }}
+                className="glass-card p-6 rounded-xl text-center group hover:scale-105 transition-all duration-300 cursor-default"
+                style={{ animationDelay: `${index * 80}ms` }}
               >
-                <span className={`bg-gradient-to-r ${tech.color} bg-clip-text text-transparent`}>
-                  {tech.name}
-                </span>
+                <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <tech.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-1">{tech.name}</h3>
+                <p className="text-xs text-muted-foreground">{tech.description}</p>
               </div>
             ))}
           </div>
 
           {/* Skills Bars */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8">
             {skillCategories.map((category, catIndex) => (
               <div
                 key={category.title}
                 className={`glass-card p-8 rounded-2xl ${
                   isInView ? 'animate-fade-up' : 'opacity-0'
                 }`}
-                style={{ animationDelay: `${catIndex * 150 + 300}ms`, animationFillMode: 'forwards' }}
+                style={{ animationDelay: `${catIndex * 150 + 400}ms`, animationFillMode: 'forwards' }}
               >
                 <h3 className="text-xl font-semibold mb-6 text-gradient">
                   {category.title}
                 </h3>
-                <div className="space-y-6">
+                <div className="space-y-5">
                   {category.skills.map((skill, index) => (
                     <div key={skill.name}>
                       <div className="flex justify-between mb-2">
@@ -90,7 +89,7 @@ const SkillsSection = () => {
                           className="skill-bar-fill"
                           style={{
                             width: isInView ? `${skill.level}%` : '0%',
-                            transitionDelay: `${index * 100 + 500}ms`,
+                            transitionDelay: `${index * 100 + 600}ms`,
                           }}
                         />
                       </div>

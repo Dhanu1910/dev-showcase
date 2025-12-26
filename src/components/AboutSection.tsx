@@ -5,22 +5,22 @@ const highlights = [
   {
     icon: GraduationCap,
     title: 'CS Student',
-    description: 'Pursuing Computer Science with focus on web technologies',
+    description: 'CSE Undergraduate at NIT Jalandhar (Batch of 2028)',
   },
   {
     icon: Code2,
     title: 'Frontend Focus',
-    description: 'Specialized in React, TypeScript, and modern CSS',
+    description: 'Passionate about HTML, CSS, JavaScript, and modern web technologies',
   },
   {
     icon: Rocket,
     title: 'Intern Experience',
-    description: 'Hands-on projects at tech startups',
+    description: 'Web Developer Intern at Prodigy Infotech with hands-on projects',
   },
   {
     icon: Heart,
     title: 'Passionate Learner',
-    description: 'Always exploring new technologies and best practices',
+    description: 'Always exploring new technologies and building real-world projects',
   },
 ];
 
@@ -47,29 +47,30 @@ const AboutSection = () => {
             {/* Text Content */}
             <div className={`space-y-6 ${isInView ? 'animate-slide-in-left' : 'opacity-0'}`}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hi! I'm <span className="text-foreground font-semibold">Alex Chen</span>, 
-                a passionate web developer currently pursuing my Computer Science degree. 
+                Hi! I'm <span className="text-foreground font-semibold">Dhanashri Chahajgune</span>, 
+                a passionate web developer currently pursuing my Computer Science degree at 
+                <span className="text-primary font-medium"> NIT Jalandhar</span> (Batch of 2028). 
                 My journey into web development started with curiosity about how websites work, 
                 and it quickly turned into a deep passion for creating beautiful, functional digital experiences.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                As a <span className="text-primary font-medium">Web Developer Intern</span>, 
-                I've had the opportunity to work on real-world projects, collaborating with 
-                talented teams to build responsive websites and web applications. I focus on 
-                writing clean, maintainable code while keeping user experience at the forefront.
+                As a <span className="text-primary font-medium">Web Developer Intern at Prodigy Infotech</span>, 
+                I've had the opportunity to work on real-world projects, building responsive websites 
+                and web applications. I focus on writing clean, maintainable code while keeping 
+                user experience at the forefront.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing 
-                to open-source projects, or sharing my learning journey with the developer community. 
-                I believe in continuous learning and pushing myself to grow every day.
+                I'm passionate about frontend development, UI/UX design, and constantly learning 
+                new technologies. I believe in continuous learning and pushing myself to grow every day 
+                through hands-on projects and real-world experience.
               </p>
 
               <div className="pt-4">
-                <p className="text-muted-foreground mb-2">Currently looking for:</p>
+                <p className="text-muted-foreground mb-2">Currently:</p>
                 <p className="text-foreground font-medium">
-                  Full-time Frontend Developer opportunities
+                  Web Developer Intern | Open to new opportunities
                 </p>
               </div>
             </div>

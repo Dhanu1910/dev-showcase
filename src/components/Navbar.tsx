@@ -65,7 +65,7 @@ const Navbar = () => {
             }}
             className="text-2xl font-bold text-gradient"
           >
-            AC
+            DC
           </a>
 
           {/* Desktop Navigation */}

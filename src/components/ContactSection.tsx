@@ -10,20 +10,20 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: Github,
-    href: 'https://github.com',
-    username: '@alexchen',
+    href: 'https://github.com/Dhanu1910',
+    username: '@Dhanu1910',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://linkedin.com',
-    username: 'Alex Chen',
+    href: 'https://www.linkedin.com/in/dhanashri-chahajgune-b83555364',
+    username: 'Dhanashri Chahajgune',
   },
   {
     name: 'Email',
     icon: Mail,
-    href: 'mailto:alex@example.com',
-    username: 'alex@example.com',
+    href: 'mailto:chahajguned@gmail.com',
+    username: 'chahajguned@gmail.com',
   },
 ];
 
@@ -92,7 +92,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <p className="text-muted-foreground text-sm">Location</p>
-                      <p className="font-medium">San Francisco, CA</p>
+                      <p className="font-medium">NIT Jalandhar, Punjab, India</p>
                     </div>
                   </div>
                 </div>

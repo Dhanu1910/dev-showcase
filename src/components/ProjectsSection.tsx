@@ -1,52 +1,28 @@
 import { useInView } from '@/hooks/useInView';
-import { ExternalLink, Github, Folder } from 'lucide-react';
+import { Github, Folder } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const projects = [
   {
-    title: 'E-Commerce Dashboard',
-    description: 'A responsive admin dashboard for managing products, orders, and analytics with real-time data visualization.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    featured: true,
-  },
-  {
-    title: 'Weather App',
-    description: 'A beautiful weather application with location-based forecasts, animated backgrounds, and 5-day predictions.',
-    tech: ['JavaScript', 'OpenWeather API', 'CSS3'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    featured: true,
-  },
-  {
-    title: 'Task Management App',
-    description: 'A Kanban-style task manager with drag-and-drop functionality, categories, and local storage persistence.',
-    tech: ['React', 'DnD Kit', 'Tailwind CSS'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    featured: true,
-  },
-  {
-    title: 'Portfolio Website v1',
-    description: 'My first portfolio website built with vanilla HTML, CSS, and JavaScript.',
+    title: 'Interactive Navbar',
+    description: 'Modern responsive navbar with smooth hover effects, scroll animations, and mobile-friendly hamburger menu.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com',
-    featured: false,
+    github: 'https://github.com/Dhanu1910',
+    featured: true,
   },
   {
-    title: 'Recipe Finder',
-    description: 'Search and save recipes from an extensive database with filtering and favorites.',
-    tech: ['React', 'Spoonacular API'],
-    github: 'https://github.com',
-    featured: false,
+    title: 'Portfolio Website',
+    description: 'Personal portfolio showcasing skills, projects, and achievements with modern dark theme and glassmorphism design.',
+    tech: ['React', 'Tailwind CSS', 'TypeScript'],
+    github: 'https://github.com/Dhanu1910',
+    featured: true,
   },
   {
-    title: 'Markdown Previewer',
-    description: 'Real-time markdown editor and previewer with syntax highlighting.',
-    tech: ['React', 'Marked.js'],
-    github: 'https://github.com',
-    featured: false,
+    title: 'Responsive Landing Page',
+    description: 'Clean and modern landing page with smooth animations and fully responsive design for all devices.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Dhanu1910',
+    featured: true,
   },
 ];
 
@@ -54,7 +30,6 @@ const ProjectsSection = () => {
   const { ref, isInView } = useInView({ threshold: 0.1 });
 
   const featuredProjects = projects.filter((p) => p.featured);
-  const otherProjects = projects.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="relative overflow-hidden" ref={ref}>
@@ -97,17 +72,6 @@ const ProjectsSection = () => {
                     >
                       <Github size={20} />
                     </a>
-                    {project.live && (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                        aria-label={`${project.title} Live Demo`}
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                    )}
                   </div>
                 </div>
 
@@ -134,53 +98,11 @@ const ProjectsSection = () => {
             ))}
           </div>
 
-          {/* Other Projects */}
-          <div className={`${isInView ? 'animate-fade-up animation-delay-500' : 'opacity-0'}`}>
-            <h3 className="text-2xl font-semibold text-center mb-8">
-              Other Noteworthy Projects
-            </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {otherProjects.map((project, index) => (
-                <div
-                  key={project.title}
-                  className="group p-5 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors"
-                >
-                  <div className="flex items-center justify-between mb-3">
-                    <h4 className="font-medium group-hover:text-primary transition-colors">
-                      {project.title}
-                    </h4>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Github size={18} />
-                    </a>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="text-xs font-mono text-muted-foreground"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* View More */}
           <div className={`text-center mt-12 ${isInView ? 'animate-fade-up animation-delay-500' : 'opacity-0'}`}>
             <Button variant="outline" size="lg" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/Dhanu1910"
                 target="_blank"
                 rel="noopener noreferrer"
               >

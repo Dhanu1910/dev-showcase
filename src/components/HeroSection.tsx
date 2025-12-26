@@ -30,7 +30,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse-glow" />
               <img
                 src={profileImage}
-                alt="Alex Chen - Web Developer"
+                alt="Dhanashri Chahajgune - Web Developer"
                 className="relative w-full h-full rounded-full object-cover border-4 border-background"
               />
             </div>
@@ -46,21 +46,20 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up opacity-0 animation-delay-200" style={{ animationFillMode: 'forwards' }}>
-            Alex <span className="text-gradient">Chen</span>
+            Dhanashri <span className="text-gradient">Chahajgune</span>
           </h1>
 
           {/* Title */}
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 animate-fade-up opacity-0 animation-delay-300" style={{ animationFillMode: 'forwards' }}>
-            Web Developer Intern
+            2nd Year CSE Student at NIT Jalandhar | Web Developer Intern
           </h2>
 
           {/* Skills Summary */}
           <p className="text-muted-foreground max-w-2xl mx-auto mb-10 text-lg leading-relaxed animate-fade-up opacity-0 animation-delay-400" style={{ animationFillMode: 'forwards' }}>
-            Crafting modern, responsive web experiences with{' '}
-            <span className="text-foreground font-medium">React</span>,{' '}
-            <span className="text-foreground font-medium">TypeScript</span>, and{' '}
-            <span className="text-foreground font-medium">Tailwind CSS</span>.
-            Passionate about clean code and pixel-perfect design.
+            Building and learning modern, interactive web development. Passionate about{' '}
+            <span className="text-foreground font-medium">frontend development</span>,{' '}
+            <span className="text-foreground font-medium">UI/UX design</span>, and{' '}
+            <span className="text-foreground font-medium">real-world projects</span>.
           </p>
 
           {/* CTA Buttons */}
@@ -84,7 +83,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 animate-fade-up opacity-0" style={{ animationDelay: '600ms', animationFillMode: 'forwards' }}>
             <a
-              href="https://github.com"
+              href="https://github.com/Dhanu1910"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card rounded-full text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300"
@@ -93,7 +92,7 @@ const HeroSection = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dhanashri-chahajgune-b83555364"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-card rounded-full text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300"
@@ -102,7 +101,7 @@ const HeroSection = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:chahajguned@gmail.com"
               className="p-3 glass-card rounded-full text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300"
               aria-label="Email"
             >

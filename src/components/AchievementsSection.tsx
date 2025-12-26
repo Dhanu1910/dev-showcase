@@ -1,42 +1,24 @@
 import { useInView } from '@/hooks/useInView';
-import { Award, BookOpen, Users, Trophy, Medal, Star } from 'lucide-react';
+import { Award, BookOpen, Users } from 'lucide-react';
 
 const achievements = [
   {
     icon: Award,
     title: 'DSA Certification',
-    description: 'Completed comprehensive Data Structures & Algorithms course with distinction',
+    description: 'Completed comprehensive Data Structures & Algorithms course from Simplilearn',
     type: 'Certification',
   },
   {
     icon: BookOpen,
-    title: 'Web Development Intern',
-    description: 'Completed internship with hands-on experience in frontend development',
+    title: 'Web Developer Intern',
+    description: 'Currently working as Web Developer Intern at Prodigy Infotech with hands-on project experience',
     type: 'Experience',
   },
   {
     icon: Users,
-    title: 'Tech Club Member',
-    description: 'Active member of the college technical club, participating in coding events',
-    type: 'Activity',
-  },
-  {
-    icon: Trophy,
-    title: 'Hackathon Participant',
-    description: 'Participated in multiple hackathons, building innovative projects',
-    type: 'Achievement',
-  },
-  {
-    icon: Medal,
-    title: 'Problem Solving',
-    description: 'Solved 200+ coding problems on competitive programming platforms',
-    type: 'Achievement',
-  },
-  {
-    icon: Star,
-    title: 'Academic Excellence',
-    description: 'Maintained strong academic performance in Computer Science coursework',
-    type: 'Academic',
+    title: 'Choreography Head',
+    description: 'Leading the Dance Club at NIT Jalandhar, organizing events and performances',
+    type: 'Leadership',
   },
 ];
 
